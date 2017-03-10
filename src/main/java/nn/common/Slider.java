@@ -5,10 +5,24 @@ public class Slider {
    private final byte[][] byteCopy = new byte[SLIDER_SIDE_SIZE][SLIDER_SIDE_SIZE];
    
    public Slider(byte[][] image, int x, int y){
-      setBytesToByteCopy(image, x, y);
+      copyBytesFromImae(image, x, y);
    }
    
-   private void setBytesToByteCopy(byte[][] image, int x, int y){
+   public byte[] asByteArray(){
+      byte[] bytes = new byte[SLIDER_SIDE_SIZE * SLIDER_SIDE_SIZE];
+   
+      for(int i = 0; i < SLIDER_SIDE_SIZE; i++) {
+         for(int j = 0; j < SLIDER_SIDE_SIZE; j++) {
+            int translationPoint = j * SLIDER_SIDE_SIZE + i;
+            
+            bytes[translationPoint] = byteCopy[i][j];
+         }
+      }
+      
+      return bytes;
+   }
+   
+   private void copyBytesFromImae(byte[][] image, int x, int y){
       int startX = x - SLIDER_SIDE_SIZE / 2;
       int startY = y - SLIDER_SIDE_SIZE / 2;
       
