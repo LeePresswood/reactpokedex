@@ -1,11 +1,13 @@
 package nn.common;
 
+import javax.imageio.ImageReader;
+
 public class Slider {
    private final int SLIDER_SIDE_SIZE = 3;
    private final byte[][] byteCopy = new byte[SLIDER_SIDE_SIZE][SLIDER_SIDE_SIZE];
    
    public Slider(byte[][] image, int x, int y) {
-      copyBytesFromImae(image, x, y);
+      copyBytesFromImage(image, x, y);
    }
    
    public byte[] asByteArray() {
@@ -22,7 +24,7 @@ public class Slider {
       return bytes;
    }
    
-   private void copyBytesFromImae(byte[][] image, int x, int y) {
+   private void copyBytesFromImage(ImageReader reader, int x, int y) {
       int startX = x - SLIDER_SIDE_SIZE / 2;
       int startY = y - SLIDER_SIDE_SIZE / 2;
       
