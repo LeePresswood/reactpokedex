@@ -1,4 +1,4 @@
-airtist
+airtist - 1.0-SNAPSHOT
 -------
 _AI + artist = airtist_
 
