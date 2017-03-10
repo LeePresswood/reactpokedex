@@ -1,8 +1,8 @@
-package nn.common.util;
+package com.leepresswood.common.util;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.PixelReader;
-import nn.common.Slider;
+import com.leepresswood.common.Slider;
 
 public class ImageConverter {
    public static Slider[] toSliderArray(Image image){

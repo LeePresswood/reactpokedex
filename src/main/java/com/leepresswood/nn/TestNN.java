@@ -1,4 +1,4 @@
-package nn;
+package com.leepresswood.nn;
 
 import lombok.extern.slf4j.Slf4j;
 import org.deeplearning4j.eval.Evaluation;

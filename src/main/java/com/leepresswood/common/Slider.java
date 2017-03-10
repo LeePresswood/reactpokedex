@@ -1,4 +1,4 @@
-package nn.common;
+package com.leepresswood.common;
 
 import javafx.scene.image.PixelReader;
 import javafx.scene.paint.Color;
