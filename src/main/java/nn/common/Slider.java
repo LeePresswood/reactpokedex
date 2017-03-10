@@ -1,13 +1,13 @@
 package nn.common;
 
-import javax.imageio.ImageReader;
+import javafx.scene.image.PixelReader;
+import javafx.scene.paint.Color;
 
 public class Slider {
    private final int SLIDER_SIDE_SIZE = 3;
-   private final byte[][] byteCopy = new byte[SLIDER_SIDE_SIZE][SLIDER_SIDE_SIZE];
    
-   public Slider(byte[][] image, int x, int y) {
-      copyBytesFromImage(image, x, y);
+   public Slider(PixelReader reader, int x, int y) {
+      Color[] colorCopy = copyBytesFromImage(reader, x, y);
    }
    
    public byte[] asByteArray() {
@@ -17,28 +17,34 @@ public class Slider {
          for(int j = 0; j < SLIDER_SIDE_SIZE; j++) {
             int translationPoint = j * SLIDER_SIDE_SIZE + i;
             
-            bytes[translationPoint] = byteCopy[i][j];
+            bytes[translationPoint] = colorCopy[i][j];
          }
       }
       
       return bytes;
    }
    
-   private void copyBytesFromImage(ImageReader reader, int x, int y) {
+   private Color[] copyBytesFromImage(PixelReader reader, int x, int y) {
+      Color[] colorCopy = new Color[SLIDER_SIDE_SIZE * SLIDER_SIDE_SIZE];
       int startX = x - SLIDER_SIDE_SIZE / 2;
+      int stopX = x + SLIDER_SIDE_SIZE - SLIDER_SIDE_SIZE / 2;
       int startY = y - SLIDER_SIDE_SIZE / 2;
+      int stopY = y + SLIDER_SIDE_SIZE - SLIDER_SIDE_SIZE / 2;
       
-      for(int i = 0; i < SLIDER_SIDE_SIZE; i++) {
-         for(int j = 0; j < SLIDER_SIDE_SIZE; j++) {
+      int current = 0;
+      
+      for(int i = startX; i < stopX; i++) {
+         for(int j = startY; j < stopY; j++) {
             try {
-               int translateX = startX + i;
-               int translateY = startY + j;
-               
-               byteCopy[i][j] = image[translateX][translateY];
-            } catch(ArrayIndexOutOfBoundsException e) {
-               byteCopy[i][j] = -1;
+               colorCopy[current] = reader.getColor(i, j);
+            } catch(IndexOutOfBoundsException e) {
+               colorCopy[current] = null;
+            }finally {
+               current++;
             }
          }
       }
+      
+      return colorCopy;
    }
 }
