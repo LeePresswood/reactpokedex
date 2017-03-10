@@ -1,8 +1,14 @@
-airtist - 0.1-SNAPSHOT
+airtist - Version 0.2
 -------
 _AI + artist = airtist_
 
 Currently Working On:
+---------------------
+- Get multiple sample images from the same artist
+- Read image from classpath to JavaFX Image instance
+- Turn Image into array of Sliders.
+
+Previously Worked On:
 ---------------------
 - ~~Creating a slider around a passed X,Y~~
 - ~~Storing an image's pixels as an array of sliders~~
