@@ -2,7 +2,6 @@ package nn.common.util;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.PixelReader;
-import javafx.scene.paint.Color;
 import nn.common.Slider;
 
 public class ImageConverter {
@@ -12,11 +11,11 @@ public class ImageConverter {
       PixelReader reader = image.getPixelReader();
       
       Slider[] sliders = new Slider[width * height];
+      int current = 0;
    
       for(int i = 0; i < width; i++) {
          for(int j = 0; j < height; j++) {
-            Color color = reader.getColor(i, j);
-            
+            sliders[current++] = new Slider(reader, i, j);
          }
       }
       
