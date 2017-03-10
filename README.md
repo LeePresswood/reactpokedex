@@ -1,6 +1,10 @@
-# airtist
-AI + artist = airtist
+airtist
+-------
+_AI + artist = airtist_
 
----------
-## Current Iteration
-Create a slider around a passed X,Y
+Currently Working On:
+---------------------
+- Creating a slider around a passed X,Y
+- Storing an image's pixels as an array of sliders
+- Representing a slider as a 1D array of bytes
+- Bytes to Binary array
