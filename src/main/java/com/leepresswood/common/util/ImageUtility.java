@@ -4,8 +4,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.PixelReader;
 import com.leepresswood.common.Slider;
 
-public class ImageConverter {
-   public static Slider[] toSliderArray(Image image){
+public class ImageUtility {
+   public static Image readImage(String path){
+      
+   }
+   
+   public static Slider[] imageToSliderArray(Image image){
       int width = (int) image.getWidth();
       int height = (int) image.getHeight();
       PixelReader reader = image.getPixelReader();
