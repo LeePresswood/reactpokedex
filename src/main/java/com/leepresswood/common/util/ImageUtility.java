@@ -4,9 +4,11 @@ import javafx.scene.image.Image;
 import javafx.scene.image.PixelReader;
 import com.leepresswood.common.Slider;
 
+import java.io.File;
+
 public class ImageUtility {
    public static Image readImage(String path){
-      
+      return new Image(new File(path).toURI().toString());
    }
    
    public static Slider[] imageToSliderArray(Image image){
