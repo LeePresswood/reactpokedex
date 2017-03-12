@@ -2,11 +2,15 @@ airtist - Version 0.2
 -------
 _AI + artist = airtist_
 
+
+Trained using Piet Mondrian's simple squares.
+
+
 Currently Working On:
 ---------------------
-- Get multiple sample images from the same artist
+- ~~Get multiple sample images from the same artist~~
 - Read image from classpath to JavaFX Image instance
-- Turn Image into array of Sliders.
+- Turn the image into array of Sliders.
 
 Previously Worked On:
 ---------------------
