@@ -10,7 +10,7 @@ Currently Working On:
 ---------------------
 - ~~Get multiple sample images from the same artist~~
 - ~~Read image from classpath to BufferedImage instance~~
-- Turn the image into array of Sliders.
+- ~~Turn the image into array of Sliders~~
 
 Previously Worked On:
 ---------------------
