@@ -1,8 +1,6 @@
 package com.leepresswood.common.util;
 
 import com.leepresswood.common.Slider;
-import javafx.scene.image.Image;
-import javafx.scene.image.PixelReader;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -12,12 +10,13 @@ import java.io.IOException;
 public class ImageUtility {
    public static BufferedImage readImage(String path) {
       try {
-         return ImageIO.read(new File(path));
+         File file = new File(ImageUtility.class.getClassLoader().getResource(path).getFile());
+         
+         return ImageIO.read(file);
       } catch(IOException e) {
          e.printStackTrace();
          return null;
       }
-   
    }
    
    public static Slider[] imageToSliderArray(BufferedImage image) {

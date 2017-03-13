@@ -6,18 +6,13 @@ import java.awt.image.BufferedImage;
 
 public class Slider {
    private final int SLIDER_SIDE_SIZE = 3;
-   private final boolean[] binary;
+   private final Color[] colors = new Color[SLIDER_SIDE_SIZE * SLIDER_SIDE_SIZE];
    
    public Slider(BufferedImage image, int x, int y) {
-      Color[] colorCopy = copyBytesFromImage(reader, x, y);
-      binary = asBinary(colorCopy);
+      copyColorFromImage(image, x, y);
    }
    
-   public boolean[] getAsBinary() {
-      return binary;
-   }
-   
-   private boolean[] asBinary(Color[] colorCopy) {
+   public boolean[] toBinary() {
       int howManyPixels = SLIDER_SIDE_SIZE * SLIDER_SIDE_SIZE;
       int howManyColors = 3;
       int bitsPerColor = 8;
@@ -25,10 +20,13 @@ public class Slider {
       int current = 0;
       boolean[] booleans = new boolean[howManyPixels * howManyColors * bitsPerColor];
       
-      for(Color color : colorCopy) {
-         String r = Integer.toBinaryString((int) color.getRed() * 255);
-         String g = Integer.toBinaryString((int) color.getGreen() * 255);
-         String b = Integer.toBinaryString((int) color.getBlue() * 255);
+      for(Color color : colors) {
+//         String r = Integer.toBinaryString((int) color.getRed() * 255);
+//         String g = Integer.toBinaryString((int) color.getGreen() * 255);
+//         String b = Integer.toBinaryString((int) color.getBlue() * 255);
+         String r = Integer.toBinaryString(color.getRed());
+         String g = Integer.toBinaryString(color.getGreen());
+         String b = Integer.toBinaryString(color.getBlue());
          String colorAsDecimalString = r + g + b;
          
          for(char character : colorAsDecimalString.toCharArray()){
@@ -39,9 +37,7 @@ public class Slider {
       return booleans;
    }
    
-   private Color[] copyBytesFromImage(BufferedImage image, int x, int y) {
-      Color[] colorCopy = new Color[SLIDER_SIDE_SIZE * SLIDER_SIDE_SIZE];
-      
+   private void copyColorFromImage(BufferedImage image, int x, int y) {
       int startX = x - SLIDER_SIDE_SIZE / 2;
       int stopX = x + SLIDER_SIDE_SIZE - SLIDER_SIDE_SIZE / 2;
       int startY = y - SLIDER_SIDE_SIZE / 2;
@@ -52,16 +48,14 @@ public class Slider {
       for(int i = startX; i < stopX; i++) {
          for(int j = startY; j < stopY; j++) {
             try {
-               colorCopy[current] = readColorFromData(image.getRGB(i, j));
+               colors[current] = readColorFromData(image.getRGB(i, j));
             } catch(IndexOutOfBoundsException e) {
-               colorCopy[current] = null;
+               colors[current] = null;
             } finally {
                current++;
             }
          }
       }
-      
-      return colorCopy;
    }
    
    private Color readColorFromData(int color){
