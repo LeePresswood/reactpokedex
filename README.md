@@ -5,6 +5,9 @@ _AI + artist = airtist_
 
 Trained using Piet Mondrian's simple squares.
 
+One generation = 1 generated image.
+After every X generations, create sample image.
+
 
 Currently Working On:
 ---------------------
