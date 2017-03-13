@@ -1,14 +1,20 @@
 package runners;
 
 import com.leepresswood.common.util.ImageUtility;
+import org.junit.Test;
 
 import java.awt.image.BufferedImage;
 
+import static org.junit.Assert.*;
+
+
 public class TestImageLoad {
-   public static void main(String[] args) {
+   @Test
+   public void imageHasNonZeroSize() {
       BufferedImage image = ImageUtility.readImage("mondrian1.jpg");
    
-      System.out.println(image.getWidth());
-      System.out.println(image.getHeight());
+      assertNotNull(image);
+      assertNotEquals(image.getWidth(), 0);
+      assertNotEquals(image.getHeight(), 0);
    }
 }
