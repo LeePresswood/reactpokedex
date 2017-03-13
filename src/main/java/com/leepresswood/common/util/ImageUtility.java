@@ -21,15 +21,15 @@ public class ImageUtility {
    }
    
    public static Slider[] imageToSliderArray(BufferedImage image) {
-      int width = (int) image.getWidth();
-      int height = (int) image.getHeight();
+      int width = image.getWidth();
+      int height = image.getHeight();
       
       Slider[] sliders = new Slider[width * height];
       int current = 0;
       
       for(int i = 0; i < width; i++) {
          for(int j = 0; j < height; j++) {
-            sliders[current++] = new Slider(reader, i, j);
+            sliders[current++] = new Slider(image, i, j);
          }
       }
       
