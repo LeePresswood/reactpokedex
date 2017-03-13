@@ -1,4 +1,4 @@
-package runners;
+package integration;
 
 import com.leepresswood.common.util.ImageUtility;
 import org.junit.Test;
