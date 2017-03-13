@@ -1,6 +1,6 @@
 package com.leepresswood.common.util;
 
-import com.leepresswood.common.Slider;
+import com.leepresswood.common.domain.Slider;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

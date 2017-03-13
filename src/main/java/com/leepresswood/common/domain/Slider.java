@@ -1,4 +1,4 @@
-package com.leepresswood.common;
+package com.leepresswood.common.domain;
 
 
 import java.awt.*;

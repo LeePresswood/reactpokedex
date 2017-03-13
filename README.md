@@ -1,4 +1,4 @@
-airtist - Version 0.2
+airtist - Version 0.3
 -------
 _AI + artist = airtist_
 
@@ -8,13 +8,13 @@ Trained using Piet Mondrian's simple squares.
 
 Currently Working On:
 ---------------------
-- ~~Get multiple sample images from the same artist~~
-- ~~Read image from classpath to BufferedImage instance~~
-- ~~Turn the image into array of Sliders~~
+- Create list of inputs for the NN
+- Spread sliders to fill inputs
+- Create input domain class for sliders and other inputs
+- Create output domain class to make sense of output.
 
 Previously Worked On:
 ---------------------
-- ~~Creating a slider around a passed X,Y~~
-- ~~Storing an image's pixels as an array of sliders~~
-- ~~Representing a slider as a 1D array of bytes~~
-- ~~Converting bytes to binary array~~
+- ~~Get multiple sample images from the same artist~~
+- ~~Read image from classpath to BufferedImage instance~~
+- ~~Turn the image into array of Sliders~~

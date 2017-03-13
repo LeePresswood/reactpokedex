@@ -1,6 +1,6 @@
 package integration;
 
-import com.leepresswood.common.Slider;
+import com.leepresswood.common.domain.Slider;
 import com.leepresswood.common.util.ImageUtility;
 import org.junit.Test;
 
