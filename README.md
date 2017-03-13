@@ -9,7 +9,7 @@ Trained using Piet Mondrian's simple squares.
 Currently Working On:
 ---------------------
 - ~~Get multiple sample images from the same artist~~
-- Read image from classpath to Java AWT Image instance
+- ~~Read image from classpath to BufferedImage instance~~
 - Turn the image into array of Sliders.
 
 Previously Worked On:

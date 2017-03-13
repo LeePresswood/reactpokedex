@@ -11,7 +11,6 @@ public class ImageUtility {
    public static BufferedImage readImage(String path) {
       try {
          File file = new File(ImageUtility.class.getClassLoader().getResource(path).getFile());
-         
          return ImageIO.read(file);
       } catch(IOException e) {
          e.printStackTrace();
