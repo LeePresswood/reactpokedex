@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Slider {
-   public static final int SLIDER_SIDE_SIZE = 3;
+   private static final int SLIDER_SIDE_SIZE = 3;
    private final Color[] colors = new Color[SLIDER_SIDE_SIZE * SLIDER_SIDE_SIZE];
    
    public Slider(BufferedImage image, int x, int y) {

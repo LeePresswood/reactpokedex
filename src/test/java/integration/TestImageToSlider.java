@@ -23,7 +23,7 @@ public class TestImageToSlider {
    public void sliderContainsCorrectNumberOfBytes() {
       BufferedImage image = ImageUtility.readImage("mondrian1.jpg");
       Slider slider = ImageUtility.imageToSliderArray(image)[0];
-      int expectedValue = Slider.SLIDER_SIDE_SIZE * Slider.SLIDER_SIDE_SIZE * 8 * 3;
+      int expectedValue = 3 * 3 * 8 * 3;
       
       assertEquals(expectedValue, slider.toBinary().length);
    }
