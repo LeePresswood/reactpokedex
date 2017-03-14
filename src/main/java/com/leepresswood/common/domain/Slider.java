@@ -21,6 +21,9 @@ public class Slider {
       boolean[] booleans = new boolean[howManyPixels * howManyColors * bitsPerColor];
       
       for(Color color : colors) {
+         if(color == null){
+            color = Color.WHITE;
+         }
 //         String r = Integer.toBinaryString((int) color.getRed() * 255);
 //         String g = Integer.toBinaryString((int) color.getGreen() * 255);
 //         String b = Integer.toBinaryString((int) color.getBlue() * 255);
