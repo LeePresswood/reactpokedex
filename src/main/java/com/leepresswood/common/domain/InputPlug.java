@@ -8,7 +8,11 @@ import org.apache.commons.lang3.ArrayUtils;
  */
 public class InputPlug {
    private boolean[] slider;
+   private boolean[] x;
+   private boolean[] y;
    
+   //Future ideas
+//   private boolean[] paintingType (maybe an enum converted to boolean array);
    
    public void setSlider(boolean[] slider) {
       this.slider = slider;
