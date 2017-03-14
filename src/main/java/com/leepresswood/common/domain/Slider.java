@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Slider {
-   private final int SLIDER_SIDE_SIZE = 3;
+   public static final int SLIDER_SIDE_SIZE = 3;
    private final Color[] colors = new Color[SLIDER_SIDE_SIZE * SLIDER_SIDE_SIZE];
    
    public Slider(BufferedImage image, int x, int y) {
@@ -28,13 +28,13 @@ public class Slider {
          }
          
          String r = Integer.toBinaryString(color.getRed());
-         r = StringUtils.leftPad(r, 8, "0");
+         r = StringUtils.leftPad(r, bitsPerColor, "0");
          
          String g = Integer.toBinaryString(color.getGreen());
-         g = StringUtils.leftPad(g, 8, "0");
+         g = StringUtils.leftPad(g, bitsPerColor, "0");
    
          String b = Integer.toBinaryString(color.getBlue());
-         b = StringUtils.leftPad(b, 8, "0");
+         b = StringUtils.leftPad(b, bitsPerColor, "0");
    
          String colorAsBinaryString = r + g + b;
          
