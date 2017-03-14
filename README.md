@@ -11,9 +11,9 @@ After every X generations, create sample image.
 
 Currently Working On:
 ---------------------
-- Create list of inputs for the NN
-- Spread sliders to fill inputs
-- Create input domain class for sliders and other inputs
+- ~~Create list of inputs for the NN~~
+- ~~Spread sliders to fill inputs~~
+- ~~Create input domain class for sliders and other inputs~~
 - Create output domain class to make sense of output.
 
 Previously Worked On:
