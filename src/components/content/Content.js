@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import './Content.css';
+import React, {Component} from "react";
+import "./Content.css";
 
 class Content extends Component {
-    render() {
+    render(){
         return (
             <div className="Content">
-                <p className="App-intro">
+                <p>
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
             </div>
