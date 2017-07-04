@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import Info from "./info/Info";
-import ProjectView from "./projectview/ProjectView";
+import React, {Component} from "react";
+import InfoSection from "../infosection/InfoSection";
+import ProjectSection from "../projectsection/ProjectSection";
 // import './App.css';
 
 class Content extends Component {
-    render() {
+    render(){
         return (
             <div className="Content">
-                <Info/>
-                <ProjectView/>
+                <InfoSection/>
+                <ProjectSection/>
             </div>
         );
     }
