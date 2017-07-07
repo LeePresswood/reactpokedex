@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Filter from "../filter/Filter";
+import Filter from "./Filter";
 // import './App.css';
 
 class FilterBox extends Component {
@@ -24,10 +24,6 @@ class FilterBox extends Component {
     
     renderFilters(){
         return this.state.filters.map(filter => <Filter key={filter.filterId} filter={filter}/>);
-    }
-    
-    setFilter(filter){
-        alert("Filter: " + filter);
     }
     
     render(){

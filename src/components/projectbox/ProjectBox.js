@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Project from "../project/Project";
+import Project from "./Project";
 // import './App.css';
 
 class ProjectBox extends Component {

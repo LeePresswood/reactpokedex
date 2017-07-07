@@ -1,14 +1,15 @@
 import React, {Component} from "react";
-import InfoSection from "../infosection/InfoSection";
-import ProjectSection from "../projectsection/ProjectSection";
-// import './App.css';
+import FilterBox from "../filterbox/FilterBox";
+import ProjectBox from "../projectbox/ProjectBox";
 
 class Content extends Component {
     render(){
         return (
             <div className="Content">
-                <InfoSection/>
-                <ProjectSection/>
+                <h2>Projects</h2>
+                <p>Choose a filter and select a project.</p>
+                <FilterBox/>
+                <ProjectBox/>
             </div>
         );
     }
