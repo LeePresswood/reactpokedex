@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
-import FilerReducer from './FilterReducer';
+import {FilterReducer} from './FilterReducer';
 
 export default combineReducers({
-    FilerReducer
+    FilterReducer
 });
