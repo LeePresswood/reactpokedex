@@ -2,7 +2,8 @@
   margin: 0 auto;
   width: 1000px;
   text-align: left;
-  background-color: #ffffff;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
 }
 
 /*.App-logo {*/
