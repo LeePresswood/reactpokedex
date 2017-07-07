@@ -1,10 +1,6 @@
 import {ADD_FILTER, REMOVE_FILTER} from '../constants'
 
-const defaultState = {
-    selectedFilters : []
-};
-
-export const FilerReducer = (state, action) =>{
+export default FilerReducer = (state, action) =>{
     switch(action.type){
         case ADD_FILTER:
             state = {
