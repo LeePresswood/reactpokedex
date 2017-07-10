@@ -1,0 +1,12 @@
+.Footer {
+    background-color: #222;
+    height: 50px;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.Footer h1 {
+    color: white;
+}

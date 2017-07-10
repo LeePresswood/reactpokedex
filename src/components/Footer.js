@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
+import '../styles/Footer.css';
 
 class Footer extends Component {
     render() {
         return (
             <div className="Footer">
-                <p>Here's text.</p>
+                <h1>Here's text.</h1>
             </div>
         );
     }
