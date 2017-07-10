@@ -1,5 +1,10 @@
 .Content {
-    width: 1000px;
-    margin: 0 auto;
+    width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
     text-align: left;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    border: 1px solid red;
+
 }

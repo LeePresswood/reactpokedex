@@ -8,5 +8,6 @@
 }
 
 .Footer h1 {
+    font-family: var(--font-family);
     color: white;
 }
