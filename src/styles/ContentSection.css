@@ -1,9 +1,6 @@
 .ContentSection {
     width: 1040px;
-
     margin: 20px auto;
-
-    font-family: var(--font-family);
-    color: var(--font-color);
-    border: 1px solid red;
+    /*background-color: #f7ffd4;*/
+    background-color: #ff9b2f;
 }
