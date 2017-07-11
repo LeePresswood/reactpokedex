@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../styles/Content.css';
+import '../styles/PokeRows.css';
 
-class Content extends Component {
+class PokeRows extends Component {
     render() {
         return (
-            <div className="Content">
+            <div className="PokeRows">
                 <div className="box">A</div>
                 <div className="box">B</div>
                 <div className="box">C</div>
@@ -17,4 +17,4 @@ class Content extends Component {
     }
 }
 
-export default Content;
+export default PokeRows;

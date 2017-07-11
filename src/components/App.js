@@ -1,13 +1,13 @@
 import React, {Component} from "react";
 import "../styles/App.css";
-import Content from "./Content";
+import ContentSection from "./ContentSection";
 import Footer from "./Footer";
 
 class App extends Component {
     render(){
         return (
             <div>
-                <Content/>
+                <ContentSection/>
                 <Footer/>
             </div>
         );
