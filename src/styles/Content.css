@@ -1,10 +1,41 @@
+/*.Content {*/
+/*width: 1200px;*/
+
+/*margin: 20px auto;*/
+/*padding: 20px;*/
+
+/*display: grid;*/
+/*grid-template-columns: 600px;*/
+
+/*text-align: left;*/
+/*font-family: var(--font-family);*/
+/*color: var(--font-color);*/
+/*border: 1px solid red;*/
+/*}*/
+
+/*@media (min-width: 1240px) {*/
 .Content {
-    width: 1200px;
+    display: grid;
+
+    grid-template-columns: repeat(6, 150px);
+    grid-gap: 20px;
+
+    width: 1000px;
+
     margin: 20px auto;
     padding: 20px;
+
     text-align: left;
     font-family: var(--font-family);
     color: var(--font-color);
     border: 1px solid red;
-
 }
+
+.box {
+    height: 150px;
+    background-color: #444;
+    color: #fff;
+    font-size: 150%;
+}
+
+/*}*/
