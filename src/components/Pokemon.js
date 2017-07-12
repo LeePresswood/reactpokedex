@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
-import '../styles/Pokemon.css';
+import React, {Component} from "react";
+import "../styles/Pokemon.css";
 
 class Pokemon extends Component {
-    render() {
+    render(){
         return (
-            <div className="Pokemon">{this.props.name}</div>
+            <div className="Pokemon">
+                <div className="hidden">{this.props.number}</div>
+                <div className="visible">{this.props.name}</div>
+            </div>
         );
     }
 }

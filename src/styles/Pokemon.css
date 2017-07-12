@@ -3,6 +3,25 @@
     color: #fff;
     font-size: 150%;
 }
-.Pokemon:hover {
+
+.Pokemon .hidden{
+    display: none;
+}
+
+.Pokemon .visible {
+    display: block;
+}
+
+.Pokemon:hover{
     background-color: #5d5d5d;
 }
+
+.Pokemon:hover .hidden {
+    display: block;
+}
+
+
+.Pokemon:hover .visible {
+    display: none;
+}
+
