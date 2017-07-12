@@ -4,10 +4,23 @@ import "../styles/PokeRows.css";
 
 class PokeRows extends Component {
     mapFilteredPokemonToComponents(){
+        let pokeNames = [
+            "Bulbasaur",
+            "Ivysaur",
+            "Venusaur",
+            "Charmander",
+            "Charmeleon",
+            "Charizard",
+            "Squirtle",
+            "Wartortle",
+            "Blastoise",
+            "Caterpie",
+        ]
+        
         return this.props.pokeArray.map((_, i) =>{
             return {
                 number: i + 1,
-                name: "Pikachu"
+                name: pokeNames[i]
             }
         }).map((pokemon) =>
             <Pokemon key={pokemon.number} {...pokemon} />
