@@ -1,0 +1,8 @@
+.Pokemon {
+    background-color: #444;
+    color: #fff;
+    font-size: 150%;
+}
+.Pokemon:hover {
+    background-color: #5d5d5d;
+}

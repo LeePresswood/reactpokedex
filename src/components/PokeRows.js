@@ -1,13 +1,23 @@
-import React, { Component } from 'react';
-import '../styles/PokeRows.css';
+import React, {Component} from "react";
+import Pokemon from "./Pokemon";
+import "../styles/PokeRows.css";
 
 class PokeRows extends Component {
-    render() {
+    mapFilteredPokemonToComponents(){
+        return this.props.pokeArray.map((_, i) =>{
+            return {
+                number: i + 1,
+                name: "Pikachu"
+            }
+        }).map((pokemon) =>
+            <Pokemon key={pokemon.number} {...pokemon} />
+        );
+    }
+    
+    render(){
         return (
             <div className="PokeRows">
-                {this.props.pokeArray.map((pokemon) =>
-                    <div key={pokemon} className="box">{pokemon}</div>
-                )}
+                {this.mapFilteredPokemonToComponents()}
             </div>
         );
     }
