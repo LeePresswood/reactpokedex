@@ -12,7 +12,7 @@ class PokeRows extends Component {
     
     render(){
         return (
-            <div className="PokeRows">
+            <div className="PokeRows row">
                 {this.mapFilteredPokemonToComponents()}
             </div>
         );
