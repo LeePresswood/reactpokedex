@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Pokemon from "./Pokemon";
-import "../styles/PokeRows.css";
 import pokemonList from "../pokemonMapped.json"
 
 class PokeRows extends Component {

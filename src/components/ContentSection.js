@@ -8,7 +8,7 @@ class ContentSection extends Component {
         return (
             <div className="ContentSection">
                 <PokeFilter />
-                <PokeRows pokeArray={new Array(10).fill({})}/>
+                <PokeRows/>
             </div>
         );
     }
