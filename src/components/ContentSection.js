@@ -6,7 +6,7 @@ import PokeFilter from "./PokeFilter";
 class ContentSection extends Component {
     render(){
         return (
-            <div className="ContentSection">
+            <div className="ContentSection col-sm-3">
                 <PokeFilter />
                 <PokeRows/>
             </div>

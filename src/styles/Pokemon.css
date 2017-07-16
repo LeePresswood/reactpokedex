@@ -1,12 +1,8 @@
 .Pokemon {
     background-color: #35873a;
-    padding: 10px;
+    padding: 20px;
     color: #fff;
     font-size: 150%;
-}
-
-.Pokemon .hidden{
-    display: none;
 }
 
 .Pokemon .visible {

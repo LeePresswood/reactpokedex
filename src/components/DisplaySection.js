@@ -6,7 +6,7 @@ import "../styles/DisplaySection.css";
 class DisplaySection extends Component {
     render(){
         return (
-            <div className="DisplaySection">
+            <div className="DisplaySection col-sm-9">
                 <h1>Display here</h1>
             </div>
         );

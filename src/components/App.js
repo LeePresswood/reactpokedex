@@ -7,9 +7,11 @@ import DisplaySection from "./DisplaySection";
 class App extends Component {
     render(){
         return (
-            <div className="Application">
-                <ContentSection/>
-                <DisplaySection/>
+            <div className="container-fluid">
+                <div className="row">
+                    <ContentSection/>
+                    <DisplaySection/>
+                </div>
                 {/*<Footer/>*/}
             </div>
         );
