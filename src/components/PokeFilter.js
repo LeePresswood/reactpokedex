@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import '../styles/ContentSection.css';
+import '../styles/PokeFilter.css';
 
 class PokeFilter extends Component {
     render() {

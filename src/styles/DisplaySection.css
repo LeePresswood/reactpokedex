@@ -1,0 +1,7 @@
+.DisplaySection{
+    display: block;
+    float: left;
+    left: 25%;
+    height: 100%;
+    width: 75%;
+}

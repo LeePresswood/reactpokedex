@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "../styles/PokeRows.css";
 import Pokemon from "./Pokemon";
 import pokemonList from "../pokemonMapped.json"
 

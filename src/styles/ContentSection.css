@@ -1,5 +1,8 @@
 .ContentSection {
-    width: 300px;
+    display: block;
+    float: left;
+    width: 25%;
+    left:0;
     margin: 0;
     background-color: #3ab63f;
 }
