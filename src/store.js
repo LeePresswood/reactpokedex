@@ -4,9 +4,16 @@ import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from './modules'
 
+import pokemonList from "./data/pokemonMapped.json"
+
 export const history = createHistory();
 
-const initialState = {};
+const initialState = {
+    selectedPokemon: null,
+    pokemonListUnfiltered: pokemonList,
+    pokemonListFiltered: pokemonList
+};
+
 const enhancers = [];
 const middleware = [
     thunk,
