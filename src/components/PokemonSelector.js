@@ -1,12 +1,12 @@
 import React, {Component} from "react";
-import "../styles/ContentSection.css";
+import "../styles/PokemonSelector.css";
 import PokeRows from "./PokeRows";
 import PokeFilter from "./PokeFilter";
 
-class ContentSection extends Component {
+class PokemonSelector extends Component {
     render(){
         return (
-            <div className="ContentSection col-sm-3">
+            <div className="PokemonSelector col-sm-3">
                 <PokeFilter />
                 <PokeRows/>
             </div>
@@ -14,4 +14,4 @@ class ContentSection extends Component {
     }
 }
 
-export default ContentSection;
+export default PokemonSelector;

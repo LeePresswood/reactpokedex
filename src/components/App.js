@@ -1,16 +1,16 @@
 import React, {Component} from "react";
 import "../styles/App.css";
-import ContentSection from "./ContentSection";
+import PokemonSelector from "./PokemonSelector";
 import Footer from "./Footer";
-import DisplaySection from "./DisplaySection";
+import PokemonDisplay from "./PokemonDisplay";
 
 class App extends Component {
     render(){
         return (
             <div className="container-fluid">
                 <div className="row">
-                    <ContentSection/>
-                    <DisplaySection/>
+                    <PokemonSelector/>
+                    <PokemonDisplay/>
                 </div>
                 {/*<Footer/>*/}
             </div>
