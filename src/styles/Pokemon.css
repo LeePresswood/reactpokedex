@@ -1,9 +1,13 @@
 .Pokemon {
-    background-color: #35873a;
+    /*background-color: #35873a;*/
     color: #fff;
     font-size: 150%;
     cursor: pointer;
     user-select: none;
+    text-align: center;
+    padding: 15px 0;
+
+    /*background-image: url(https://img.pokemondb.net/sprites/sun-moon/montage-icon-20161204.png);*/
 }
 
 .Pokemon:hover{
