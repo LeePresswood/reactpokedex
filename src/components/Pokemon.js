@@ -4,10 +4,10 @@ import "../styles/Pokemon.css";
 class Pokemon extends Component {
     render(){
         return (
-            <div className="Pokemon row">
-                <div className="col-sm-4">{this.props.number}</div>
-                <div className="col-sm-4">{this.props.name}</div>
-                <div className="col-sm-4">Picture</div>
+            <div className="Pokemon col-sm-4">
+                <div>{this.props.number}</div>
+                <div>{this.props.name}</div>
+                <div>Picture</div>
             </div>
         );
     }
