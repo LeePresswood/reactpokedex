@@ -1,13 +1,8 @@
 import React from 'react'
-import "./index.css";
-
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import {
-    filterEven
-} from '../../modules/filter'
+import {connect} from 'react-redux'
 
 import Pokemon from '../pokemon'
+import "./index.css";
 
 const PokeRows = props => (
     <div className="PokeRows row">
@@ -17,7 +12,7 @@ const PokeRows = props => (
             )
         }
     </div>
-)
+);
 
 const mapStateToProps = state => ({
     selectedPokemon: state.filter.selectedPokemon,
@@ -25,11 +20,6 @@ const mapStateToProps = state => ({
     pokemonListFiltered: state.filter.pokemonListFiltered
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-    increment : filterEven
-}, dispatch);
-
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
+    mapStateToProps
 )(PokeRows)
