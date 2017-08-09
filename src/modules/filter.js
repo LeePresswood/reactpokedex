@@ -44,7 +44,7 @@ export default (state = initialState, action) =>{
     }
 }
 
-export const increment = () =>{
+export const filterEven = () =>{
     return dispatch =>{
         dispatch({
             type : INCREMENT_REQUESTED

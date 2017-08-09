@@ -4,20 +4,18 @@ import "./index.css";
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import {
-    increment
+    filterEven
 } from '../../modules/filter'
 
 import Pokemon from '../pokemon'
 
-function mapFilteredPokemonToComponents(props){
-    return props.pokemonListFiltered.map((pokemon) =>
-        <Pokemon key={pokemon.number} {...pokemon} />
-    );
-}
-
 const PokeRows = props => (
     <div className="PokeRows row">
-        {mapFilteredPokemonToComponents(props)}
+        {
+            props.pokemonListFiltered.map((pokemon) =>
+                <Pokemon key={pokemon.number} {...pokemon} />
+            )
+        }
     </div>
 )
 
@@ -28,7 +26,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-    increment
+    increment : filterEven
 }, dispatch);
 
 export default connect(
