@@ -9,9 +9,9 @@ import pokemonList from "./data/pokemonMapped.json"
 export const history = createHistory();
 
 const initialState = {
-    selectedPokemon: null,
-    pokemonListUnfiltered: pokemonList,
-    pokemonListFiltered: pokemonList
+    // selectedPokemon: null,
+    // pokemonListUnfiltered: pokemonList,
+    // pokemonListFiltered: pokemonList
 };
 
 const enhancers = [];
