@@ -1,6 +1,4 @@
 import React from 'react'
-import PokeFilter from "../../components/PokeFilter";
-import PokeRows from "../../components/PokeRows";
 import "./index.css";
 
 export default () => (
