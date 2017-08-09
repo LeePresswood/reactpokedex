@@ -1,6 +1,6 @@
 import React from 'react'
-import PokemonSelector from "../../components/PokemonSelector";
-import PokemonDisplay from "../../components/PokemonDisplay";
+import PokemonSelector from "../pokemonselect";
+import PokemonDisplay from "../pokemondisplay";
 
 export default () => (
     <div className="container-fluid">

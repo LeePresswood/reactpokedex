@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "../styles/PokemonDisplay.css";
+import "../containers/pokemondisplay/PokemonDisplay.css";
 // import PokeRows from "./PokeRows";
 // import PokeFilter from "./PokeFilter";
 
