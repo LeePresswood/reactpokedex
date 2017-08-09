@@ -2,13 +2,13 @@ import React from 'react'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 
-import {filterEven} from '../../modules/filter'
+import {filterEven, filterOdd} from '../../modules/filter'
 import "./index.css";
 
 const PokeFilter = props => (
     <div className="PokeFilter row">
         <button onClick={props.filterEven}>Filter Even</button>
-        <button onClick={props.filterEven}>Filter Odd</button>
+        <button onClick={props.filterOdd}>Filter Odd</button>
     </div>
 );
 
@@ -20,6 +20,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators({
     filterEven : filterEven,
+    filterOdd : filterOdd
 }, dispatch);
 
 export default connect(
