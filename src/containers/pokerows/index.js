@@ -1,18 +1,37 @@
 import React from 'react'
 import "./index.css";
-// import React, {Component} from "react";
-// import "../containers/pokerows/PokeRows.css";
-// import Pokemon from "./Pokemon";
-// import pokemonList from "../data/pokemonMapped.json"
 
-function mapFilteredPokemonToComponents(){
-    // return pokemonList.map((pokemon) =>
-        {/*<Pokemon key={pokemon.number} {...pokemon} />*/}
-    // );
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import {
+    increment
+} from '../../modules/filter'
+
+import Pokemon from '../pokemon'
+
+function mapFilteredPokemonToComponents(props){
+    return props.pokemonListFiltered.map((pokemon) =>
+        <Pokemon key={pokemon.number} {...pokemon} />
+    );
 }
 
-export default () => (
+const PokeRows = props => (
     <div className="PokeRows row">
-        {mapFilteredPokemonToComponents()}
+        {mapFilteredPokemonToComponents(props)}
     </div>
 )
+
+const mapStateToProps = state => ({
+    selectedPokemon: state.filter.selectedPokemon,
+    pokemonListUnfiltered: state.filter.pokemonListUnfiltered,
+    pokemonListFiltered: state.filter.pokemonListFiltered
+});
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+    increment
+}, dispatch);
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(PokeRows)
