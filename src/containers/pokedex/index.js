@@ -1,5 +1,5 @@
 import React from 'react'
-import PokemonSelector from "../pokemonselect";
+import PokemonSelector from "../pokemonselector";
 import PokemonDisplay from "../pokemondisplay";
 
 export default () => (

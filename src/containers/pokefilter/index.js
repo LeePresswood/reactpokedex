@@ -4,8 +4,7 @@ import PokeRows from "../../components/PokeRows";
 import "./index.css";
 
 export default () => (
-    <div className="PokemonSelector col-sm-3">
-        <PokeFilter />
-        <PokeRows/>
+    <div className="PokeFilter row">
+        <h1>Filter Here</h1>
     </div>
 )
