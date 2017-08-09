@@ -1,6 +1,6 @@
 import pokemonList from "../data/pokemonMapped.json"
 
-export const INCREMENT_REQUESTED = 'counter/INCREMENT_REQUESTED';
+export const FILTER_EVEN = 'filter/FILTER_EVEN';
 // export const INCREMENT = 'counter/INCREMENT';
 // export const DECREMENT_REQUESTED = 'counter/DECREMENT_REQUESTED';
 // export const DECREMENT = 'counter/DECREMENT';
@@ -13,10 +13,10 @@ const initialState = {
 
 export default (state = initialState, action) =>{
     switch(action.type){
-        case INCREMENT_REQUESTED:
+        case FILTER_EVEN:
             return {
                 ...state,
-                isIncrementing : true
+                pokemonListFiltered : state.pokemonListUnfiltered.filter((pokemon) => pokemon.number % 2 === 0)
             };
         
         // case INCREMENT:
@@ -47,12 +47,8 @@ export default (state = initialState, action) =>{
 export const filterEven = () =>{
     return dispatch =>{
         dispatch({
-            type : INCREMENT_REQUESTED
+            type : FILTER_EVEN
         });
-        
-        // dispatch({
-        //     type : INCREMENT
-        // })
     }
 };
 

@@ -8,7 +8,7 @@ import {
 
 const PokeFilter = props => (
     <div className="PokeFilter row">
-        <button onClick={props.increment} disabled={props.isIncrementing}>Increment</button>
+        <button onClick={props.filterEven}>Filter Even</button>
     </div>
 );
 
@@ -19,7 +19,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-    increment : filterEven
+    filterEven : filterEven
 }, dispatch);
 
 export default connect(
