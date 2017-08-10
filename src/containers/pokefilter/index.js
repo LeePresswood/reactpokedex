@@ -13,9 +13,7 @@ const PokeFilter = props => (
     </div>
 );
 
-const mapStateToProps = state => ({
-    
-});
+const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => bindActionCreators({
     filterEven : filterEven,

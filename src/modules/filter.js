@@ -5,7 +5,6 @@ export const FILTER_ODD = 'filter/FILTER_ODD';
 export const FILTER_REMOVE = 'filter/FILTER_REMOVE';
 
 const initialState = {
-    selectedPokemon : null,
     pokemonListUnfiltered : pokemonList,
     pokemonListFiltered : pokemonList
 };
