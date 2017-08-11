@@ -9,7 +9,7 @@ export default (state = initialState, action) =>{
         case SELECT_POKEMON:
             return {
                 ...state,
-                selectedPokemon : action.pokemonIndex
+                selectedPokemon : (action.pokemonIndex !== state.selectedPokemon ? action.pokemonIndex : null)
             };
         default:
             return state;

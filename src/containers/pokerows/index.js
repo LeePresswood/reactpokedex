@@ -15,7 +15,6 @@ const PokeRows = props => (
 );
 
 const mapStateToProps = state => ({
-    selectedPokemon : state.select.selectedPokemon,
     pokemonListFiltered : state.filter.pokemonListFiltered
 });
 
