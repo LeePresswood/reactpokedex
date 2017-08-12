@@ -6,7 +6,7 @@ import {selectPokemon} from '../../modules/select'
 import "./index.css";
 
 const PokeFilter = props => (
-    <div className={"Pokemon col-sm-4" + (props.selectedPokemon === props.number ? " selected" : "")} onClick={() => props.selectPokemon(props.number)}>
+    <div className={"Pokemon col-md-4 col-sm-6" + (props.selectedPokemon === props.number ? " selected" : "")} onClick={() => props.selectPokemon(props.number)}>
         <div>{props.number}</div>
         <div>{props.name}</div>
         <div>Picture</div>

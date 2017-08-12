@@ -14,3 +14,7 @@
     background-color: #358a3a;
 }
 
+.Pokemon.selected{
+    background-color: #36973b;
+}
+
